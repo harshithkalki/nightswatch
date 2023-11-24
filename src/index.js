@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+// import { CryptoContext } from './context/CryptoContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider>
+      <ColorModeScript initialColorMode='dark'></ColorModeScript>
+      {/* <CryptoContext> */}
+        <App />
+      {/* </CryptoContext> */}
+    </ChakraProvider>
   </React.StrictMode>
 );
 
