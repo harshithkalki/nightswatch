@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <HStack pt="3"   pb="2vh" px='100'  >
             <Flex justifyContent="space-between" w="100%" >
-             <Heading>WIKI</Heading>
+             <Heading>NIGHTSWATCH-WIKI</Heading>
              <IconButton icon={isDark?<FaSun />:<FaMoon />} isRound="true" onClick={toggleColorMode} ml={isNotSmallerScreen?"2vw":"3vw"} ></IconButton>
             </Flex>
         </HStack>
